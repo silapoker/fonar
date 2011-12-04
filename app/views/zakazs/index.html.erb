@@ -1,0 +1,33 @@
+<% if teacher_signed_in?%>
+<h1>Все заказы</h1>
+
+<table>
+  <tr>
+    <th>Имя</th><th></th>
+    <th>Телефон</th><th></th>
+    <th>Email</th><th></th>
+    <th>Количество</th><th></th>
+    <th>Комментарий</th><th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zakazs.each do |zakaz| %>
+  <tr>
+    <td><%= zakaz.name %></td><td></td>
+    <td><%= zakaz.phone %></td><td></td>
+    <td><%= zakaz.email %></td><td></td>
+    <td><%= zakaz.kol %></td><td></td>
+    <td><%= zakaz.comment %></td><td></td>
+    <td><%= link_to 'Просмотреть', zakaz %></td>
+    <td><%= link_to 'Изменить', edit_zakaz_path(zakaz) %></td>
+    <td><%= link_to 'Удалить', zakaz, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Новый заказ', new_zakaz_path %>
+<% end %>

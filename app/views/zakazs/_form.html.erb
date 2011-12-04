@@ -1,0 +1,37 @@
+<%= form_for(@zakaz) do |f| %>
+  <% if @zakaz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zakaz.errors.count, "error") %> prohibited this zakaz from being saved:</h2>
+
+      <ul>
+      <% @zakaz.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :'Ваше имя' %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :'Номер телефона' %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :'E-mail' %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :'Количество' %><br />
+    <%= f.number_field :kol %>
+  </div>
+  <div class="field">
+    <%= f.label :'Комментарий к заказу' %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Отправить' %>
+  </div>
+<% end %>

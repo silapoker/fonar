@@ -1,0 +1,13 @@
+<div class="lavalamp" >
+<ul>
+  <li class="active"></li>
+<li ><%=link_to "Домашняя", root_path%></li>
+
+<li><%=link_to "О нас", about_path%></li>
+<li ><%=link_to "История воздушных фонариков", help_path%></li>
+<% if teacher_signed_in?%>
+<li ><%=link_to "Просмотр заказов", '/zakazs/'%></li>
+<% end %>
+</ul>
+<div class="floatr"></div>
+</div>

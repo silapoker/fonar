@@ -1,0 +1,25 @@
+<h2>Редактирование <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :"E-mail" %><br />
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :Пароль %> <i>(leave blank if you don't want to change it)</i><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :Подтвердите_пароль %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :Старый_пароль %> <i>(we need your current password to confirm your changes)</i><br />
+  <%= f.password_field :current_password %></div>
+
+  <div><%= f.submit "Изменить" %></div>
+<% end %>
+
+<h3>Выйти</h3>
+
+
+
+<%= link_to "Back", :back %>

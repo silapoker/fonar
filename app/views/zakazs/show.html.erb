@@ -1,0 +1,32 @@
+<% if teacher_signed_in?%>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @zakaz.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @zakaz.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @zakaz.email %>
+</p>
+
+<p>
+  <b>Kol:</b>
+  <%= @zakaz.kol %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @zakaz.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_zakaz_path(@zakaz) %> |
+<%= link_to 'Back', zakazs_path %>
+<%end%>
