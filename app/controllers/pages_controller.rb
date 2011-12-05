@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def home
 
   end
+
+def manual
+
+  end
 end
