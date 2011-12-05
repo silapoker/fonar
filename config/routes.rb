@@ -20,6 +20,7 @@ New::Application.routes.draw do
 
   match 'help' => 'pages#help'
 match 'about' => 'pages#about'
+match 'flashmob' => 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
