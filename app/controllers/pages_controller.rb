@@ -11,5 +11,9 @@ class PagesController < ApplicationController
 
 def manual
 
+end
+
+def flashmob
+
   end
 end
