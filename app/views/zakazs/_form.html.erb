@@ -4,9 +4,7 @@
       <h2><%= pluralize(@zakaz.errors.count, "error") %> prohibited this zakaz from being saved:</h2>
 
       <ul>
-      <% @zakaz.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+   
       </ul>
     </div>
   <% end %>
