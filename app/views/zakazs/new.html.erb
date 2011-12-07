@@ -1,27 +1,40 @@
-</br>
-<h3>Страничка заказа воздушного фонарика</h3>
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Небесные фонарики</title>
+		<link rel="stylesheet" type="text/css" href="fonariki.css">
+	</head>
+	<body>
+		<div class="all">	
+			
+			<div class="order">
+				<table>
+					<tr>
+						<td> <h6>Предзаказ фонариков</h6></td><td></td>  </tr>
+					<tr>
+						<td> 
+							<p id="i4"> 
+										<br>Это предварительный заказ.<br>
+										<br> Оплачивать ничего не нужно. <br>
+										<br>Оставьте ваши координаты и объем заказа, а мы обязательно 
+										с вами свяжемся и доставим ваш заказ в удобное вам место.<br>
+										<a href="http://vkontakte.ru/event32771660">
+												<img class="ico" id="i7" src="images/vk.png"></a>
+										<br> Приходите на Флешмоб <br>после Рождества
+									
+							</p> 
+						</td> 
+						<td>
+							<%= render 'form' %>
+						</td> 
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
 
-Однажды я увидел видео, как запускаются воздушные фонарики, и уменя пришла идея, сделать такой флешмоб, и если Вы примите в нем участие,</br> то наша команда будет безусловно рада. В наши времена, сложно подарить людям частичку тепла
-и радости, но иногда такие моменты происходят.
 
-<h4>Фонарики будут у нас в течение двух недель, мы сами с вами свяжемся и доставим их куда нужно</h4>
-
-<h3> Цена одного фонарика, 120 рублей, мы позвоним Вам, оплата после получения </h3>
-
-Нажми "сохранить" Если ты учавствуешь во флешмобе
-
-<!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?11" charset="windows-1251"></script>
-
-<!-- Put this script tag to the place, where the Share button will be -->
-<script type="text/javascript"><!--
-document.write(VK.Share.button(false,{type: "link", text: "Сохранить"}));
---></script>
-<p></p>
-<p></p>
-<p></p>
-
-<%= render 'form' %>
 
 
 
