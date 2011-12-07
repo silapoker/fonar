@@ -26,7 +26,7 @@
 				<tr>	
 					<td><%=image_tag 'f2.jpg'%> </td>
 					<td><h5> Будь котиком, закажи фонарик </h5>
-						<p class="bigbutton"> Заказать </p></td>
+			<%= link_to "Заказать", { :controller => 'zakazs', :action => 'new' }, :class => 'bigbutton' -%>
 				</tr>
 			</table>
 		</div>

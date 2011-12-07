@@ -10,11 +10,11 @@
 				<% link_to 'Домашняя', root_path %>
 				<% link_to 'Контакты', about_path %>
 				<% link_to 'Инструкция', manual_path %>
-				<li><a>История фонариков</a></li>
+				<li><a>   </a></li>
 			</ul>
 			<h1>Подарим друг другу частичку радости</h1>
 			<a href="http://vkontakte.ru/event32771660">Флешмоб после Рождества</a>
-			<p class="bigbutton"> Хочу фонарик </p>
+			<%= link_to "Хочу фонарик", { :controller => 'zakazs', :action => 'new' }, :class => 'bigbutton' -%>
 			
 		</div>
 	</body>
