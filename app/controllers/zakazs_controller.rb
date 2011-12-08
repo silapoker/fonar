@@ -11,6 +11,7 @@ class ZakazsController < ApplicationController
     end
     
   def index
+    @kolvo = Zakaz.sum( 'kol')
     @zakazs = Zakaz.all
 
     respond_to do |format|
