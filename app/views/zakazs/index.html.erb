@@ -1,6 +1,6 @@
 
 <div class="all">
-
+ <div class = "pokaz">
 
 
 <% if teacher_signed_in?%>
@@ -22,7 +22,9 @@
 <% @zakazs.each do |zakaz| %>
   
   <tr>
+    
     <td><%= zakaz.name %></td><td>|</td>
+    
     <td><%= zakaz.phone %></td><td>|</td>
     <td><%= zakaz.email %></td><td>|</td>
     <td><%= zakaz.kol %></td><td>|</td>
@@ -32,6 +34,8 @@
     <td><%= link_to 'Удалить', zakaz, confirm: 'Are you sure?', method: :delete %></td>
     
   </tr>
+  
+
 <% end %>
 </table>
 
@@ -40,4 +44,5 @@
 <p> Из них <%= @oplacheno %> человек уже оплатили <%= @oplfon %> фонариков на сумму <%= @oplfon*120 %> рублей </p>
 <%= link_to 'Новый заказ', new_zakaz_path %>
 <% end %>
+</div>
 </div>

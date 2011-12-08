@@ -62,5 +62,8 @@
 				form {	background:rgba(245,122,1,0.3); border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;
 						padding:20pt; text-align:center; width:500pt; margin:10pt;}
 				#i5 { width:300pt; margin:10pt 0; } #i6 { width:80pt; } #i7{float:left; margin:22pt 10pt 5pt 0;}
-				
+		.pokaz {
+			font-family:Arial;
+			font-size: 16pt
+		}		
 		
