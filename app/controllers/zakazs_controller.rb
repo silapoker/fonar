@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class ZakazsController < ApplicationController
   # GET /zakazs
   # GET /zakazs.json
@@ -13,7 +15,15 @@ class ZakazsController < ApplicationController
   def index
     @kolvo = Zakaz.sum( 'kol')
     @zakazs = Zakaz.all
-
+    @oplacheno = 0
+    @oplfon = 0
+    
+     @zakazs.each do |zakaz| 
+  if zakaz.comment == "Оплачено"
+        @oplacheno = @oplacheno + 1
+        @oplfon = @oplfon + zakaz.kol
+  end
+  end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @zakazs }
