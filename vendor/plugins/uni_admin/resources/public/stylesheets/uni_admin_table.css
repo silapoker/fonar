@@ -1,0 +1,73 @@
+table.uni_admin_table {
+  width:100%;
+  border-collapse: collapse;
+  border: 2px solid #996;
+  font: normal 100%/140% verdana, arial, helvetica, sans-serif;
+  color: #333;
+  background: #fffff0;
+  }
+table.uni_admin_table caption {
+  padding: 0 .4em .4em;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  background: transparent;
+  }
+table.uni_admin_table td, 
+table.uni_admin_table th {
+  border: 1px solid #cc9;
+  padding: .3em;
+  }
+table.uni_admin_table thead th, 
+table.uni_admin_table tfoot th {
+  border: 1px solid #cc9;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+  color: #444;
+  background: #dbd9c0;
+  }
+table.uni_admin_table tbody td a {
+  background: transparent;
+  color: #72724c;
+  }
+table.uni_admin_table tbody td a:hover {
+  background: transparent;
+  color: blue;
+  }
+table.uni_admin_table tbody th a {
+  background: transparent;
+  color: #72724c;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom: 1px dotted #cc9;
+  }
+table.uni_admin_table tbody th a:hover {
+  background: transparent;
+  color: #666;
+  border-bottom: 1px dotted #72724c;
+  }
+table.uni_admin_table tbody th, 
+table.uni_admin_table tbody td {
+  vertical-align: top;
+  text-align: left;
+  }
+table.uni_admin_table tfoot td {
+  border: 1px solid #996;
+  }
+table.uni_admin_table .odd {
+  color: #333;
+  background: #f7f5dc;
+  }
+table.uni_admin_table tbody tr:hover {
+  color: #333;
+  background: #ddd59b;
+  }
+table.uni_admin_table tbody tr:hover th,
+table.uni_admin_table tbody tr.odd:hover th {
+  color: #333;
+  background: #ddd59b;
+  }
+

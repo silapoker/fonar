@@ -1,0 +1,33 @@
+UniAdmin
+========
+Uni Admin is a simple administration layout support for ruby on rails web application. Now it includes:
+
+* an admin base controller and dashboard action
+* a simple admin layout
+* a simple admin CSS file
+* an integrated admin menu
+* a record list table style
+
+View the demo.gif in the plugin category.
+
+Installation
+========
+script/plugin install http://ruby-on-rails-plugin-uni-admin.googlecode.com/svn/trunk/uni_admin
+
+Add routes:
+map.connect '/uni_admin/', :controller => 'uni_admin', :action => 'dashboard'
+map.connect '/uni_admin/demo', :controller => 'uni_admin', :action => 'demo'
+
+Example
+=======
+* After installation, start your server: >script/server
+* Visit http://localhost:3000/uni_admin/
+* Visit http://localhost:3000/uni_admin/demo
+
+Author's Info
+=======
+Blog About UniAdmin: http://xiaoboonrails.blogspot.com/search/label/uni_admin
+My Blog Xiaobo On Rails: http://xiaoboonrails.blogspot.com/
+My Other Website: http://www.kikout.com
+Copyright (c) 2008 [xiaobozzz@gmail.com], released under the MIT license
+

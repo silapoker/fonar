@@ -60,10 +60,12 @@
 				#i4 {background:rgba(245,122,1,0.4); border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;
 					padding:10pt; font-size:19pt; width:250pt; text-align:justify; margin:0 20pt;}
 				form {	background:rgba(245,122,1,0.3); border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;
-						padding:20pt; text-align:center; width:500pt; margin:10pt;}
+						padding:20pt; text-align:center; margin:10pt;}
 				#i5 { width:300pt; margin:10pt 0; } #i6 { width:80pt; } #i7{float:left; margin:22pt 10pt 5pt 0;}
-		.pokaz {
-			font-family:Arial;
-			font-size: 16pt
-		}		
+	
+	.pokaz {font-family:Arial;
+		background :aaa;
 		
+}
+.button_to {	background:rgba(000,000,000,000.0);
+}

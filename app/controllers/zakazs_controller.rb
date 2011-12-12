@@ -5,6 +5,7 @@ class ZakazsController < ApplicationController
   # GET /zakazs.json
     def new
     @zakaz = Zakaz.new
+    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -12,9 +13,12 @@ class ZakazsController < ApplicationController
     end
     end
     
+    
+    
   def index
     @kolvo = Zakaz.sum( 'kol')
-    @zakazs = Zakaz.all
+    @zakazs = Zakaz.all( :order => "Zakazs.comment ASC ")
+    
     @oplacheno = 0
     @oplfon = 0
     

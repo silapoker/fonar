@@ -1,0 +1,45 @@
+/*Credits: CSSplay */
+/*URL: http://www.cssplay.co.uk/menus/pro_drop2 */
+
+.preload2 {background: url(/images/uni_admin_menu/button4.gif);}
+.uni_admin_menu {padding:0 0 0 20px; margin:0; list-style:none; height:40px; background:#fff url(/images/uni_admin_menu/button1a.gif) repeat-x; position:relative; font-family:arial, verdana, sans-serif; }
+.uni_admin_menu li.top {display:block; float:left; position:relative;}
+.uni_admin_menu li a.top_link {display:block; float:left; height:40px; line-height:33px; color:#ddd; text-decoration:none; font-size:11px; font-weight:bold; padding:0 0 0 12px; cursor:pointer;}
+.uni_admin_menu li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:40px;}
+.uni_admin_menu li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:40px; background:url(/images/uni_admin_menu/down.gif) no-repeat right top;}
+.uni_admin_menu li a.top_link:hover {color:#fff; background: url(/images/uni_admin_menu/button4.gif) no-repeat;}
+.uni_admin_menu li a.top_link:hover span {background:url(/images/uni_admin_menu/button4.gif) no-repeat right top;}
+.uni_admin_menu li a.top_link:hover span.down {background:url(/images/uni_admin_menu/button4a.gif) no-repeat right top;}
+
+.uni_admin_menu li:hover > a.top_link {color:#fff; background: url(/images/uni_admin_menu/button4.gif) no-repeat;}
+.uni_admin_menu li:hover > a.top_link span {background:url(/images/uni_admin_menu/button4.gif) no-repeat right top;}
+.uni_admin_menu li:hover > a.top_link span.down {background:url(/images/uni_admin_menu/button4a.gif) no-repeat right top;}
+
+.uni_admin_menu table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+/* Style the list OR link hover. Depends on which browser is used */
+
+.uni_admin_menu a:hover {visibility:visible;}
+.uni_admin_menu li:hover {position:relative; z-index:200;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.uni_admin_menu ul, 
+.uni_admin_menu :hover ul ul, 
+.uni_admin_menu :hover ul :hover ul ul,
+.uni_admin_menu :hover ul :hover ul :hover ul ul,
+.uni_admin_menu :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+.uni_admin_menu :hover ul.sub {left:2px; top:40px; background: #eee; padding:3px 0; border:1px solid #4ab; white-space:nowrap; width:150px; height:auto;}
+.uni_admin_menu :hover ul.sub li {display:block; height:20px; position:relative; float:left; width:147px;}
+.uni_admin_menu :hover ul.sub li a {display:block; font-size:11px; height:20px; width:144px; line-height:20px; text-indent:5px; color:#000; text-decoration:none; border:3px solid #fff; border-width:0 0 0 3px;}
+.uni_admin_menu :hover ul.sub li a.fly {background:#fff url(/images/uni_admin_menu/arrow.gif) 80px 7px no-repeat;}
+.uni_admin_menu :hover ul.sub li a:hover {background:#4ab; color:#fff;}
+.uni_admin_menu :hover ul.sub li a.fly:hover {background:#4ab url(/images/uni_admin_menu/arrow_over.gif) 80px 7px no-repeat; color:#fff;}
+.uni_admin_menu :hover ul li:hover > a.fly {background:#4ab url(/images/uni_admin_menu/arrow_over.gif) 80px 7px no-repeat; color:#fff;} 
+
+.uni_admin_menu :hover ul :hover ul,
+.uni_admin_menu :hover ul :hover ul :hover ul,
+.uni_admin_menu :hover ul :hover ul :hover ul :hover ul,
+.uni_admin_menu :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:90px; top:-4px; background: #fff; padding:3px 0; border:1px solid #4ab; white-space:nowrap; width:93px; z-index:200; height:auto;}
