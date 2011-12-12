@@ -29,8 +29,8 @@
     <td><%= zakaz.email %></td><td>|</td>
     <td><%= zakaz.kol %></td><td>|</td>
     <td><%= zakaz.comment %></td><td>|</td>
-    <td><%= link_to 'Просмотреть', zakaz %></td>
-    <td><%= link_to 'Изменить', edit_zakaz_path(zakaz) %></td>
+    <td><%= button_to 'Просмотреть', zakaz %></td>
+    <td><%= button_to 'Изменить', edit_zakaz_path(zakaz) %></td>
     <%= javascript_include_tag "defoult" %>
     <td><%= button_to  'Удалить', zakaz,  method: :delete, :class => 'a' %></td>
     

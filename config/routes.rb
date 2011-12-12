@@ -19,6 +19,7 @@ New::Application.routes.draw do
  
 
   match 'help' => 'pages#help'
+   match 'opt' => 'pages#opt'
 match 'about' => 'pages#about'
 match 'flashmob' => 'pages#flashmob'
 
